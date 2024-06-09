@@ -1,14 +1,14 @@
 import sys
 import os
 
+from googlemaps import Client
+from src.config import GOOGLE_API_KEY
+
 root_path = os.path.abspath(os.path.join(os.path.dirname(__file__), '..'))
 print(f"Adding {root_path} to PYTHONPATH")
 sys.path.append(root_path)
 
 print("Current PYTHONPATH:", sys.path)
-
-from googlemaps import Client
-from src.config import GOOGLE_API_KEY
 
 API_KEY = os.getenv('GOOGLE_API_KEY')
 print(f"Loaded API key: {API_KEY}")

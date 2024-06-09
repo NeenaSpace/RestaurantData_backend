@@ -1,4 +1,4 @@
-#!/Users/ninawang/Desktop/res_data_backend/venv/bin/python
+#!/Users/ninawang/Desktop/resProject/backend/venv/bin/python
 # -*- coding: utf-8 -*-
 import re
 import sys
