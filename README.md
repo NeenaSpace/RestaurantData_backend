@@ -1,6 +1,7 @@
 # Restaurant Dietary Information Extractor
 
-This project aims to help users find restaurants that cater to their specific dietary preferences, such as vegan, vegetarian, gluten-free, etc. It gathers and processes data from Google Places API and uses OpenAI API to extract relevant dietary information from restaurant reviews.
+Discover restaurants that align with your dietary needs! This project leverages the power of Google Places API and OpenAI API to help users find dining options that cater to specific dietary preferences, including vegan, vegetarian, and gluten-free. By gathering and analyzing restaurant reviews, the system extracts and structures dietary information, ensuring you can make informed choices about where to eat. The project also integrates MongoDB for data storage and Redis for caching, enhancing performance and data management.
+
 
 ## Setup Instructions
 Follow these steps to set up and run the project:
@@ -18,7 +19,24 @@ Next, install the necessary Python libraries using the requirements.txt file.
 Install the required libraries using pip.
 pip install -r requirements.txt
 
-### 3. Run the Project
+### 3. Set up MongoDB 
+Ensure MongoDB is installed and running on your machine. You can install MongoDB using Homebrew.
+
+brew tap mongodb/brew
+brew install mongodb-community@6.0
+brew services start mongodb/brew/mongodb-community
+```bash```
+brew services stop mongodb/brew/mongodb-community
+
+### 4. Set up Redis
+
+brew install redis
+brew services start redis
+```bash```
+brew services stop redis
+
+
+## Run the Project
 
 Finally, execute the main script to start the project.
 python src/main.py
