@@ -27,3 +27,5 @@ urllib3==2.2.1
 
 pymongo==4.1.1
 redis==4.1.0
+
+Flask==2.0.2
